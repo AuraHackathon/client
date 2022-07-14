@@ -1,0 +1,219 @@
+{
+  "_format": "hh-sol-artifact-1",
+  "contractName": "Constant",
+  "sourceName": "contracts/libraries/Config.sol",
+  "abi": [
+    {
+      "inputs": [],
+      "name": "AIRDROP_MINT_TOKEN_AMOUNT",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "BD_INVESTOR_TOKEN_AMOUNT",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "BD_TEAM_TOKEN_AMOUNT",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "FIRST_MINT_TOKEN_AMOUNT",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "LIQUIDITY_MINT_TOKEN_AMOUNT",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "MARKETING_TOKEN_AMOUNT",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "PRIVATE_SALE_RATE",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "PRIVATE_SALE_TOKEN_AMOUNT",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "PUBLIC_SALE_RATE",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "PUBLIC_SALE_TOKEN_AMOUNT",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "REFERRAL_REWARD_RATE",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "SALE_FIRST_RECEIVE_RATE",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "SALE_MINT_TOKEN_AMOUNT",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "SALE_MIN_AMOUNT",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "TECH_TOKEN_AMOUNT",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "TREASURY_MINT_TOKEN_AMOUNT",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    }
+  ],
+  "bytecode": "0x6102c661003a600b82828239805160001a60731461002d57634e487b7160e01b600052600060045260246000fd5b30600052607381538281f3fe730000000000000000000000000000000000000000301460806040526004361061010a5760003560e01c8063b505d11c116100a1578063de024ba311610070578063de024ba314610192578063e3ce1e521461019a578063eaed7f87146101a2578063f9b68077146101aa57600080fd5b8063b505d11c1461016c578063b619cc2f14610177578063cd2b429e1461017f578063d7629b2d1461018757600080fd5b806368d91303116100dd57806368d91303146101495780636fc1d9b31461015157806371bafbc61461015c5780639bde45861461016457600080fd5b8063074a35cb1461010f57806309ebc66f1461012e57806318c4dee0146101365780635009da3214610141575b600080fd5b61011c655af3107a400081565b60405190815260200160405180910390f35b61011c601981565b61011c632160ec0081565b61011c6101b8565b61011c600a81565b61011c632faf080081565b61011c6101d1565b61011c6101e7565b61011c631c9c380081565b61011c6101fa565b61011c610211565b61011c630e4e1c0081565b61011c610227565b61011c61023d565b61011c610253565b61011c660110d9316ec00081565b6101ce670de0b6b3a76400006339387000610265565b81565b6101ce670de0b6b3a76400006309896800610265565b6101ce670de0b6b3a76400006032610265565b6101ce670de0b6b3a7640000640165a0bc00610265565b6101ce670de0b6b3a7640000630e4e1c00610265565b6101ce670de0b6b3a76400006317d78400610265565b6101ce670de0b6b3a7640000639d5b3400610265565b6101ce670de0b6b3a76400006347868c005b600081600019048311821515161561028b57634e487b7160e01b81526011600452602481fd5b50029056fea2646970667358221220e1a31517b05729901e996cc5311599ac001056ae7f4e90b6ed5e207fbd886f1b64736f6c63430008040033",
+  "deployedBytecode": "0x730000000000000000000000000000000000000000301460806040526004361061010a5760003560e01c8063b505d11c116100a1578063de024ba311610070578063de024ba314610192578063e3ce1e521461019a578063eaed7f87146101a2578063f9b68077146101aa57600080fd5b8063b505d11c1461016c578063b619cc2f14610177578063cd2b429e1461017f578063d7629b2d1461018757600080fd5b806368d91303116100dd57806368d91303146101495780636fc1d9b31461015157806371bafbc61461015c5780639bde45861461016457600080fd5b8063074a35cb1461010f57806309ebc66f1461012e57806318c4dee0146101365780635009da3214610141575b600080fd5b61011c655af3107a400081565b60405190815260200160405180910390f35b61011c601981565b61011c632160ec0081565b61011c6101b8565b61011c600a81565b61011c632faf080081565b61011c6101d1565b61011c6101e7565b61011c631c9c380081565b61011c6101fa565b61011c610211565b61011c630e4e1c0081565b61011c610227565b61011c61023d565b61011c610253565b61011c660110d9316ec00081565b6101ce670de0b6b3a76400006339387000610265565b81565b6101ce670de0b6b3a76400006309896800610265565b6101ce670de0b6b3a76400006032610265565b6101ce670de0b6b3a7640000640165a0bc00610265565b6101ce670de0b6b3a7640000630e4e1c00610265565b6101ce670de0b6b3a76400006317d78400610265565b6101ce670de0b6b3a7640000639d5b3400610265565b6101ce670de0b6b3a76400006347868c005b600081600019048311821515161561028b57634e487b7160e01b81526011600452602481fd5b50029056fea2646970667358221220e1a31517b05729901e996cc5311599ac001056ae7f4e90b6ed5e207fbd886f1b64736f6c63430008040033",
+  "linkReferences": {},
+  "deployedLinkReferences": {}
+}

@@ -1,0 +1,18 @@
+// Socket URL
+// export const WS_END_POINT = process.env.REACT_APP_WS_END_POINT || 'http://localhost:3000';
+
+// Limit space supply total
+export const LIMIT_SPACE_SUPPLY_TOTAL = process.env.REACT_APP_LIMIT_SPACE_SUPPLY_TOTAL
+                                    ? Number(process.env.REACT_APP_LIMIT_SPACE_SUPPLY_TOTAL)
+                                    : 12;
+
+// SC address
+export const SC_TREASURYVESTER_CONTRACT_ADDRESS = process.env.REACT_APP_SC_TREASURYVESTER_CONTRACT_ADDRESS || '0x98D4214017f316Fc6F7A7f36c8B55FE83b04503f'
+export const SC_AIRDROP_CONTRACT_ADDRESS = process.env.REACT_APP_SC_AIRDROP_CONTRACT_ADDRESS || '0x0B7b17608eC0dFbBb93A0B6B7b14bEc4C4D6A788'
+export const SC_TOKEN_PAM_CONTRACT_ADDRESS = process.env.REACT_APP_SC_TOKEN_PAM_CONTRACT_ADDRESS || '0xe536c603532ca9d79cc52df9001eb6cc216c1c1a'
+export const SC_SALE_CONTRACT_ADDRESS = process.env.REACT_APP_SC_SALE_CONTRACT_ADDRESS || '0xc9A98e1568B2722ef69db2d783e3EDA158FAA984'
+export const SC_MARKETING_CONTRACT_ADDRESS = process.env.REACT_APP_SC_MARKETING_CONTRACT_ADDRESS || '0x56AF8976774Ee2512E70937c6fa34dfF91a41AEf'
+// Common
+export const SECRET_KEY = "41435231323535552d4a312041757458";      
+//API PRODUCTION
+//export const REACT_APP_API_URL_PRO = 'https://pam-api-s42c5r6tya-as.a.run.app'

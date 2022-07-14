@@ -1,24 +1,21 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import { BrowserRouter as Router } from "react-router-dom";
+import LandingPage from "./pages";
+import Web3 from "web3";
+import { Web3ReactProvider } from "@web3-react/core";
 
 function App() {
+  const getLibrary = (provider) => {
+    const library = new Web3(provider);
+    return library
+  };
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Web3ReactProvider getLibrary={getLibrary}>
+      <Router>
+        <LandingPage />
+      </Router>
+    </Web3ReactProvider>
   );
 }
 
