@@ -1,5 +1,6 @@
 import React from "react";
 import useWallet from "../../hooks/useWallet";
+
 import {
   SidebarContainer,
   Icon,
@@ -9,10 +10,10 @@ import {
   SidebarLink,
   SideBarBtnWrap,
   SideBarWalletConnectBtn,
-  SidebarLinkR
+  SidebarLinkR,
 } from "./SidebarElements";
 
-const SideBar = ({ isOpen, toggle, displayWalletConnect, hideNav}) => {
+const SideBar = ({ isOpen, toggle, displayWalletConnect, hideNav }) => {
   const { active, account, deactivate } = useWallet();
 
   const convertMiddleEllipseText = (accountName) => {
@@ -25,19 +26,30 @@ const SideBar = ({ isOpen, toggle, displayWalletConnect, hideNav}) => {
 
   const DisconectWallet = () => {
     deactivate();
+    localStorage.setItem("state", "idle");
+    localStorage.setItem("client", null);
+    localStorage.setItem("key", null);
+    localStorage.setItem("address", "");
   };
   return (
-    <SidebarContainer isOpen={isOpen} onClick={toggle} hideNav = {hideNav}>
+    <SidebarContainer isOpen={isOpen} onClick={toggle} hideNav={hideNav}>
       <Icon onClick={toggle}>
         <CloseIcon />
       </Icon>
       <SidebarWrapper>
         <SidebarMenu>
           <SidebarLink to="/">HOME</SidebarLink>
-          <SidebarLinkR to="/play" >PLAY</SidebarLinkR>
-          <SidebarLinkR to="/marketplace" > MARKETPLACE </SidebarLinkR>
-          <SidebarLinkR to="/changelog" > CHANGELOG</SidebarLinkR>
-          <SidebarLink  onClick={() => window.open("https://opensea.io/collection/housegame", "_blank")}> OPENSEA</SidebarLink>
+          <SidebarLinkR to="/play">PLAY</SidebarLinkR>
+          <SidebarLinkR to="/marketplace"> MARKETPLACE </SidebarLinkR>
+          <SidebarLinkR to="/changelog"> CHANGELOG</SidebarLinkR>
+          <SidebarLink
+            onClick={() =>
+              window.open("https://opensea.io/collection/housegame", "_blank")
+            }
+          >
+            {" "}
+            OPENSEA
+          </SidebarLink>
 
           <SideBarBtnWrap>
             <SideBarWalletConnectBtn onClick={displayWalletConnect}>
@@ -52,7 +64,6 @@ const SideBar = ({ isOpen, toggle, displayWalletConnect, hideNav}) => {
             </SideBarBtnWrap>
           )}
         </SidebarMenu>
-        
       </SidebarWrapper>
     </SidebarContainer>
   );

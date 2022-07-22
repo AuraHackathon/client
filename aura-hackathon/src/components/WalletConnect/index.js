@@ -1,4 +1,5 @@
 import React from "react";
+import { useConnectWallet } from "../../hooks/useConnectWallet";
 import useWallet from "../../hooks/useWallet";
 import { CloseIcon } from "../Sidebar/SidebarElements";
 import {
@@ -14,16 +15,25 @@ import {
   WrappedWalletConnectBackground,
   WrappedWalletConnectBody,
 } from "./WalletConnectElement";
-
+import chainInfo from "../../../public/chain_info.testnet.json";
 export default function WalletConnect({ openWallet, displayWalletConnect }) {
   const { WalletConnect, InjetedConnect, active } = useWallet();
+  const { mutate: connectWallet } = useConnectWallet();
   const handleConnectMetamaskWallet = async () => {
     await InjetedConnect();
     displayWalletConnect();
   };
 
   const handleConnectWallet = async () => {
+    await window.keplr.experimentalSuggestChain(chainInfo);
+    await window.keplr.enable(chainInfo.chainId);
     await WalletConnect();
+    displayWalletConnect();
+  };
+
+  const handleConnectWalletKeplr = async () => {
+    console.log("await connect");
+    await connectWallet(null);
     displayWalletConnect();
   };
 
@@ -49,6 +59,10 @@ export default function WalletConnect({ openWallet, displayWalletConnect }) {
           <WalletConnectBtn onClick={handleConnectWallet}>
             <WalletConnectLabel>Wallet Connect</WalletConnectLabel>
             <WalletConnectLogo src="./images/coins/walletconnect.png" />
+          </WalletConnectBtn>
+          <WalletConnectBtn onClick={handleConnectWalletKeplr}>
+            <WalletConnectLabel>Wallet Connect</WalletConnectLabel>
+            <WalletConnectLogo src="./images/coins/keplr.png" />
           </WalletConnectBtn>
         </WrappedWalletConnectBody>
       </WalletConnectContainer>
